@@ -1,0 +1,5 @@
+D root
+  D myDir
+    D myDir2
+    D myDir3
+  F file1 {hello}
