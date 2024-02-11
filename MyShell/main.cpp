@@ -533,20 +533,6 @@ int main() {
         else if(command == "cd." ){
             currentDirectory = dynamic_pointer_cast<Directory>(currentDirectory->changeToCurrentDirectory());
         }
-        /*else if(command == "cd.."){                                   
-            cout << currentDirectory->getName() << endl;
-            //currentDirectory = dynamic_pointer_cast<Directory>(currentDirectory->changeToParentDirectory());
-            //cout << currentDirectory->getName() << endl;
-            auto newDirectory = dynamic_pointer_cast<Directory>(currentDirectory->changeToParentDirectory());
-
-            if (newDirectory && newDirectory != currentDirectory) {
-                currentDirectory = newDirectory;
-                cout << currentDirectory->getName() << endl;
-            } else {
-                cout << "Already in the root directory\n";
-            }
-            cout << currentDirectory->getName() << endl;
-        }*/
         else if(command == "cat"){
             cout << "Enter file name: ";
             string fileName;
@@ -562,7 +548,7 @@ int main() {
                 cout << "Error: File not found\n";
             }
         }
-        else if(command == "cp"){                       //TO USE-> /home/slakdn/Masaüstü/hw2/history.txt
+        else if(command == "cp"){                       //TO USE for example -> /home/slakdn/Masaüstü/myShell/history.txt
             cout << "Enter source file path: ";
             string sourceFilePath, destinationFileName;
             cin >> sourceFilePath;
